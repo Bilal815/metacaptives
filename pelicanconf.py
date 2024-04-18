@@ -4,7 +4,7 @@ import os
 # Author and site information
 AUTHOR = 'Admin'
 SITENAME = 'Stand Blog'
-SITEURL = 'https://stand-blog.pages.dev'
+SITEURL = ''
 CATEGORY = 'Blog'
 SITEDESCRIPTION = 'My Blog'
 DEFAULT_LOCALE = 'en_US'
