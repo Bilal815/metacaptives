@@ -3,7 +3,7 @@ import os
 
 # Author and site information
 AUTHOR = 'Admin'
-SITENAME = 'Stand Blog'
+SITENAME = 'MetaCaptives'
 SITEURL = ''
 CATEGORY = 'Blog'
 SITEDESCRIPTION = 'My Blog'
@@ -95,7 +95,7 @@ SOCIAL_MEDIA_LINKS = (
 )
 
 # Pagination settings
-DEFAULT_PAGINATION = 10
+DEFAULT_PAGINATION = 7
 PAGINATION_PATTERNS = (
     (1, '{url}', '{save_as}'),
     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),

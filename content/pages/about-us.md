@@ -1,18 +1,18 @@
 Title: About Us
-Description: Welcome to **Stand Blog**!
+Description: Welcome to **MetaCaptives**!
 Slug: about
 Save_as: about.html
 
 
 # About Us
 
-Welcome to **Stand Blog**!
+Welcome to **MetaCaptives**!
 
 We are a passionate team of writers and enthusiasts dedicated to bringing you the latest and most insightful content on a variety of topics. Our mission is to stand out from the crowd by delivering valuable and engaging articles that cater to a diverse range of interests.
 
 ## Our Focus
 
-At Stand Blog, we cover a wide spectrum of subjects, including:
+At MetaCaptives, we cover a wide spectrum of subjects, including:
 
 - Technology trends and innovations
 - Science and discoveries
@@ -34,7 +34,7 @@ Quality is at the heart of everything we do. We take pride in delivering content
 
 ## Join Us on the Journey
 
-Whether you're a tech enthusiast, a curious traveler, a science lover, or simply someone who enjoys a good read, Stand Blog is here for you. Join us on this journey of discovery and exploration as we bring you captivating stories and thought-provoking insights.
+Whether you're a tech enthusiast, a curious traveler, a science lover, or simply someone who enjoys a good read, MetaCaptives is here for you. Join us on this journey of discovery and exploration as we bring you captivating stories and thought-provoking insights.
 
 Stay connected with us through our articles and social media channels, and let's stand together for knowledge and inspiration.
 
@@ -46,4 +46,4 @@ For inquiries, collaborations, or feedback, feel free to [contact us](/contact).
 
 Follow us on [Twitter](https://twitter.com/standblog) | [Facebook](https://facebook.com/standblog) | [Instagram](https://instagram.com/standblog)
 
-Thank you for being a part of the Stand Blog community!
+Thank you for being a part of the MetaCaptives community!

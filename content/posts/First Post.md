@@ -7,11 +7,12 @@ Tags: Lahore, lahore lahore hai
 Summary: Acha hua
 resume: Following is a review of my favorite city having my FAV mechanical keyboard.
 Thumbnail: theme/assets/images/contents/thumbnail/pelican.jpg
+Alt: A picture for alt text demo
 Status: draft
 --------------------
 
 # My First Visit To Lahore
-
+![This image is in Markdown format]({filename}theme/assets/images/contents/thumbnail/pelican.jpg)
 *Date: 2010-12-03 10:20*
 
 *Category: Lahore Lahore Hai*

@@ -6,12 +6,14 @@ Tags: python, Pelican
 Date: 2023-08-24
 Modified: 2023-08-24
 Category: web development
-Author: ChatGPT
+Author: Bilal
 Thumbnail: theme/assets/images/contents/thumbnail/pelican.jpg
+Alt: A picture for alt text demo
 Status: published
 
 Static site generators have revolutionized the way we build and manage websites. Among the various options available, Pelican stands out as a versatile and efficient choice. In this article, we'll delve into what Pelican is, how it works, and why you might consider using it for your next web project.
 
+![This image is in Markdown format](theme/assets/images/contents/thumbnail/pelican.jpg)
 ## What is Pelican?
 
 Pelican is an open-source static site generator written in Python. It takes your content, typically authored in Markdown or reStructuredText, along with a set of templates, and generates a static website. This means that instead of generating content dynamically on each request like traditional web platforms, a static site generator pre-builds the entire website into HTML, CSS, and other static assets. This approach offers several advantages, including improved performance, security, and simplicity.

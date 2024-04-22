@@ -3,6 +3,10 @@
 
 ![Stand Blog Home](Home-Stand-Blog-Home.png)
 
+UX that needs to be followed: https://www.behance.net/gallery/194989379/Tech-Thrifty-Blog-Website?tracking_source=search_projects|tech+blog&l=39
+
+Template replicated: https://templatemo.com/tm-551-stand-blog
+
 Demo:
 -----
 
