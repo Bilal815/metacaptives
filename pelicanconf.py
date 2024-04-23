@@ -2,7 +2,7 @@
 import os
 
 # Author and site information
-AUTHOR = 'Admin'
+AUTHOR = 'Bilal Ahmed'
 SITENAME = 'MetaCaptives'
 SITEURL = ''
 CATEGORY = 'Blog'
@@ -11,9 +11,9 @@ DEFAULT_LOCALE = 'en_US'
 
 # Contact information
 CONTACT_INFORMATION = {
-    'Phone Number': '090-484-8080',
-    'Email Address': 'info@company.com',
-    'Street Address': '123 Aenean id posuere dui, Praesent laoreet 10660'
+    'Phone Number': '+92 342-270-0268',
+    'Email Address': 'captivesmeta@gmail.com',
+    'Street Address': 'Shahrah e Sher Shah Suri, North Nazimabad Town, Karachi, Pakistan'
 }
 
 # Content settings
@@ -66,6 +66,7 @@ AUTHOR_URL_SAVE_AS = 'author/{slug}/index.html'
 
 # Pages
 TEMPLATE_PAGES = {
+#    'blog.html': 'blog.html',
     'contact.html': 'contact.html',
     '404.html': '404.html',
 }

@@ -3,73 +3,47 @@
         Copyright (c) 2024 Your Website.
         Theme developed by pypithemes.com
     -->
-<html lang="{{ DEFAULT_LANG }}">
+<html lang="en">
 <head>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   {% if USE_GOOGLE_FONTS != False %}
    <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
       rel="stylesheet">
-   {% endif %}
    <title>
-      {% block title %}{% endblock %}
-      -
-      {{ SITENAME }}</title>
-   {% if FAVEICON %}
-   <link rel="icon" href="{{ FAVEICON }}" type="image/x-icon">
-   {% endif %}
+ Blog | MetaCaptives       -
+      MetaCaptives</title>
+   <link rel="icon" href="/theme/assets/images/icon.png" type="image/x-icon">
    <!-- Bootstrap core CSS -->
    <link href="/theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <!-- Additional CSS Files -->
    <link rel="stylesheet" href="/theme/assets/css/fontawesome.css">
    <link rel="stylesheet" href="/theme/assets/css/templatemo-stand-blog.css">
    <link rel="stylesheet" href="/theme/assets/css/owl.css">
-   {% if not PLUGINS or 'seo' not in PLUGINS %}
-   {% if REL_CANONICAL %}
-   {% if page %}
-   <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
-   {% elif article %}
-   <link rel="canonical" href="{{ SITEURL }}/{{ article.url }}">
-   {% elif page_name == 'index' and not articles_previous_page %}
-   <link rel="canonical" href="{{ SITEURL }}">
-   {% elif author or category or tag or page_name == 'index' %}
-   <link rel="canonical" href="{{ SITEURL }}/{{ articles_page.url }}">
-   {% else %}
-   <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
-   {% endif %}
-   {% endif %}
-   {% endif %}
+   <link rel="canonical" href="/blog/">
    <!-- Meta Tags -->
-   {% if page %}
    <!-- Page-specific meta tags -->
-   <meta name="author" content="{{ AUTHOR }}">
-   <meta name="description" content="{{ page.description|striptags|escape }}">
-   {% elif article %}
-   <!-- Article-specific meta tags -->
-   <meta name="author" content="{{ article.author.name }}">
-   <meta name="description" content="{{ article.description|striptags|escape }}">
-   {% elif category %}
-   <!-- Category-specific meta tags -->
-   <meta name="author" content="{{ AUTHOR }}">
-   <meta name="description" content="Articles in the '{{ category }}' category on {{ SITENAME }}">
-   {% elif tag %}
-   <!-- Tag-specific meta tags -->
-   <meta name="author" content="{{ AUTHOR }}">
-   <meta name="description" content="Articles tagged with '{{ tag }}' on {{ SITENAME }}">
-   {% else %}
-   <!-- Default meta tags -->
-   <meta name="author" content="{{ AUTHOR }}">
-   <meta name="description" content="{{ SITEDESCRIPTION }}">
-   {% endif %}
-   {% if OPEN_GRAPH %}
-   {% include "partial/og-tags.html" %}
-   {% endif %}
-   {% if TWITTER_TAGS %}
-   {% include "partial/twitter-tags.html" %}
-   {% endif %}
-   {% block custom_meta_tags %}{% endblock %}
-   {% block custom_css_code %}{% endblock %}
+   <meta name="author" content="Bilal Ahmed">
+   <meta name="description" content="Welcome to Metacaptives!">
+<!-- Open Graph Meta Tags -->
+<meta property="og:site_name" content="MetaCaptives">
+<meta property="og:locale" content="en_US">
+
+<!-- For Pages -->
+<meta property="og:title" content="Blog | MetaCaptives">
+<meta property="og:type" content="page">
+<meta property="og:description" content="">
+<meta property="og:url" content="/blog">
+
+
+<!-- Common meta tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="MetaCaptives">
+<meta name="twitter:creator" content="pytheme">
+<!-- Page-specific meta tags -->
+<meta name="twitter:title" content="Blog | MetaCaptives">
+<meta name="twitter:description" content="Welcome to Metacaptives!">
+<meta name="twitter:url" content="/blog">
 </head>
 
 <body>
@@ -87,7 +61,7 @@
       <nav class="navbar navbar-expand-lg">
          <div class="container">
             <a class="navbar-brand" href="/">
-               <h2>{{ SITENAME }}<em>.</em>
+               <h2>MetaCaptives<em>.</em>
                </h2>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -113,25 +87,56 @@
       </nav>
    </header>
    <!-- /Content -->
-   {% block content %}{% endblock %}
+<!-- Page Content -->
+
+
+<!-- Banner Starts Here -->
+<div class="heading-page header-text">
+  <section class="page-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="text-content">
+            <h4>Blog | MetaCaptives</h4>
+            <h2>more Blog | MetaCaptives</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Banner Ends Here -->
+
+
+<section class="about-us">
+  <div class="container">
+    
+  </div>
+</section>
+
+
    <footer>
       <div class="container">
          <div class="row">
             <div class="col-lg-12">
                <ul class="social-icons">
-                  {% for name, link in SOCIAL_MEDIA_LINKS %}
-                  {% if link %}
                   <li>
-                     <a href="{{ link }}">{{ name }}</a>
+                     <a href="https://twitter.com/your_twitter_username">Twitter</a>
                   </li>
-                  {% endif %}
-                  {% endfor %}
+                  <li>
+                     <a href="https://facebook.com/your_facebook_username">Facebook</a>
+                  </li>
+                  <li>
+                     <a href="https://github.com/your_github_username">GitHub</a>
+                  </li>
+                  <li>
+                     <a href="https://youtube.com/your_youtube_username">Youtube</a>
+                  </li>
                </ul>
             </div>
             <div class="col-lg-12">
                <div class="copyright-text">
                   <p>Copyright 2024 MetaCaptives</p>
-                  <p>Proudly powered by <a href="https://metacaptives.com" target="_blank">MetaCaptives </a><a href="https://www.linkedin.com/in/bilal-ahmed-technical--marketing-writer" target="_blank">Bilal</a> </p>
                </div>
             </div>
          </div>
