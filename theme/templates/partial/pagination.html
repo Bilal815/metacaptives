@@ -4,7 +4,7 @@
 <ul class="page-numbers">
   {% if articles_page.has_previous() %}
   <!-- Previous Page -->
-  <li><a href="/{{ articles_previous_page.url }}"><i class="fa fa-angle-double-left"></i></a></li>
+  <li><a href="{{ SITE_URL }}/{{ articles_previous_page.url }}"><i class="fa fa-angle-double-left"></i></a></li>
   {% endif %}
 
   {% set max_pages = 4 %}
@@ -26,14 +26,14 @@
       {% for page_number in page_range %}
       <!-- Page Number Links -->
       <li class="{% if articles_page.number == page_number %}active{% endif %}">
-        <a href="/{{articles_page.url}}{% if page_number == 1 %}{% else %}page/{{ page_number }}{% endif %}">{{
+        <a href="{{ SITE_URL }}/{{articles_page.url}}{% if page_number == 1 %}{% else %}page/{{ page_number }}{% endif %}">{{
           page_number }}</a>
       </li>
       {% endfor %}
 
       {% if articles_page.has_next() %}
       <!-- Next Page -->
-      <li><a href="/{{ articles_next_page.url }}"><i class="fa fa-angle-double-right"></i></a></li>
+      <li><a href="{{ SITE_URL }}/{{ articles_next_page.url }}"><i class="fa fa-angle-double-right"></i></a></li>
       {% endif %}
 </ul>
 {% endif %}

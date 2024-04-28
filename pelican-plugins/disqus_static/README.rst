@@ -34,7 +34,7 @@ Usage
             <li class="post">
                 <div class="post-content">
                     <div class="avatar hovercard">
-                        <img alt="Avatar" src="{{ comment.author.avatar.small.cache }}">
+                        <img alt="Avatar" src="{{ SITE_URL }}/{{ comment.author.avatar.small.cache }}">
                     </div>
                     <div class="post-body">
                         <header>

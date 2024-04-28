@@ -19,10 +19,10 @@
             <ul>
               {% for article in articles[:5] %}
                 <li>
-                  <a href="/{{ article.slug }}">
+                  <a href="{{ SITEURL }}/{{ article.slug }}">
                     <!-- Blog post thumbnail -->
                     <div class="blog-thumb">
-                      <img loading="lazy" src="{{ article.thumbnail }}" alt="{% if article.alt %}{{ article.alt }}{% endif %}">
+                      <img loading="lazy" src="{{ SITEURL }}/{{ article.thumbnail }}" alt="{% if article.alt %}{{ article.alt }}{% endif %}">
                     </div>
                     <h5>{{ article.title }}</h5>
                     <span>{{ article.date.strftime('%B %d, %Y') }}</span>

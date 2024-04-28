@@ -4,19 +4,19 @@
   <div class="blog-post">
     <!-- Blog post thumbnail -->
     <div class="blog-thumb">
-      <img loading="lazy" src="{{SITEURL}}/{{ article.thumbnail }}" alt="{% if article.alt %}{{ article.alt }}{% endif %}">
+      <img loading="lazy" src="{{ SITEURL }}/{{ article.thumbnail }}" alt="{% if article.alt %}{{ article.alt }}{% endif %}">
     </div>
     <div class="down-content">
       <!-- Display category -->
       <span>{{ article.category }}</span>
       <!-- Article title with link to article page -->
-      <a href="/{{ article.slug }}">
+      <a href="{{ SITE_URL }}/{{ article.slug }}">
         <h4>{{ article.title }}</h4>
       </a>
       <!-- Post information -->
       <ul class="post-info">
         <li>
-          <a href="/{{ article.author.url }}">{{ article.author }}</a>
+          <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
         </li>
         <li>
           <a href="#">{{ article.date.strftime('%B %d, %Y') }}</a>
@@ -36,7 +36,7 @@
               {% for tag in article.tags %}
               <!-- Display article tags with links -->
               <li>
-                <a href="/{{ tag.url }}">{{ tag }}</a>
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                 {% if not loop.last %},
               </li>
               {% endif %}
