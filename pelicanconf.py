@@ -9,6 +9,20 @@ CATEGORY = 'Blog'
 SITEDESCRIPTION = 'My Blog'
 DEFAULT_LOCALE = 'en_US'
 
+# To read markdown file in 
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {},
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+    },
+    'output_format': 'html',
+}
+
+# Explicitly define the Markdown reader
+from pelican.readers import MarkdownReader
+READERS = {'md': MarkdownReader}
+
 # Contact information
 CONTACT_INFORMATION = {
     'Phone Number': '+92 342-270-0268',

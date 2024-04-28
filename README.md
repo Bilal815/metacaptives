@@ -7,6 +7,23 @@ UX that needs to be followed: https://www.behance.net/gallery/194989379/Tech-Thr
 
 Template replicated: https://templatemo.com/tm-551-stand-blog
 
+## Future Additions (Source: https://www.github-zh.com/projects/6547965-pelican-plugins):
+https://github.com/nogaems/pelican-ert
+./post_stats
+https://github.com/pelican-plugins/read-more
+https://github.com/pelican-plugins/related-posts
+https://github.com/pelican-plugins/photos
+https://github.com/kura/pelican_youtube
+https://github.com/jhshi/pelican.plugins.ga_page_view
+https://github.com/kura/pelican-githubprojects
+https://github.com/ingwinlu/pelican-toc
+https://github.com/Shaked/pelican-version
+https://github.com/tylerdave/pelican-meetup-info
+https://github.com/mortada/pelican_javascript
+https://github.com/bmcorser/pelicanfly
+https://pypi.org/project/pelican_admin/#toc-entry-1
+
+
 Demo:
 -----
 
