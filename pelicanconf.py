@@ -52,8 +52,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Article settings
-ARTICLE_URL = '{slug}'
-ARTICLE_SAVE_AS = '{slug}.html'
+ARTICLE_URL = 'blog/{slug}'
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
 
 # Page settings
 PAGE_URL = '{slug}/'
@@ -80,7 +80,9 @@ AUTHOR_URL = 'author/{slug}/'
 AUTHOR_URL_SAVE_AS = 'author/{slug}/index.html'
 
 # Pages
+DIRECT_TEMPLATES = ['index', 'blog']
 TEMPLATE_PAGES = {
+    'index.html': 'index.html',
     'blog.html': 'blog.html',
     'contact.html': 'contact.html',
     '404.html': '404.html',
@@ -111,6 +113,7 @@ SOCIAL_MEDIA_LINKS = (
 )
 
 # Pagination settings
+PAGINATED_TEMPLATES = {'index': None, 'blog': None}
 DEFAULT_PAGINATION = 1
 PAGINATION_PATTERNS = (
     (1, '{url}', '{save_as}'),

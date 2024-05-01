@@ -20,7 +20,7 @@
    <link rel="icon" href="{{ FAVEICON }}" type="image/x-icon">
    {% endif %}
    <!-- Bootstrap core CSS -->
-   <link href="/theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link href="{{ SITEURL }}/theme/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <!-- Additional CSS Files -->
    <link rel="stylesheet" href="{{SITEURL}}/theme/assets/css/fontawesome.css">
    <link rel="stylesheet" href="{{SITEURL}}/theme/assets/css/templatemo-stand-blog.css">
@@ -34,7 +34,7 @@
    {% elif page_name == 'index' and not articles_previous_page %}
    <link rel="canonical" href="{{ SITEURL }}">
    {% elif author or category or tag or page_name == 'index' %}
-   <link rel="canonical" href="{{ SITEURL }}/{{ articles_page.url }}">
+   <link rel="canonical" href="{{ SITEURL }}/{{ articles.url }}">
    {% else %}
    <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}">
    {% endif %}
