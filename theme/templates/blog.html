@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block title %} Home | {{ SITENAME }} {% endblock %}
 
+{% block custom_js_code %}
+<script src="{{ SITEURL }}/theme/assets/js/article.js"></script>
+{% endblock %}
+
 {% block content %}
 <div class="heading-page header-text">
     <section class="page-heading">

@@ -80,7 +80,9 @@ AUTHOR_URL = 'author/{slug}/'
 AUTHOR_URL_SAVE_AS = 'author/{slug}/index.html'
 
 # Pages
+DIRECT_TEMPLATES = ['index', 'blog']
 TEMPLATE_PAGES = {
+    'blog.html': 'blog.html',
     'contact.html': 'contact.html',
     '404.html': '404.html',
 }
