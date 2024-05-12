@@ -5,7 +5,7 @@ import os
 AUTHOR = 'Bilal Ahmed'
 SITENAME = 'MetaCaptives'
 SITEURL = ''
-CATEGORY = 'Blog'
+CATEGORY = ''
 SITEDESCRIPTION = 'My Blog'
 DEFAULT_LOCALE = 'en_US'
 
@@ -40,7 +40,7 @@ DEFAULT_LANG = 'en'
 
 # Appearance settings
 SITELOGO = ""
-FAVEICON = '/theme/assets/images/icon.png'
+FAVEICON = '{}/theme/assets/images/icon.png'.format(SITEURL)
 DELETE_OUTPUT_DIRECTORY = True
 THEME = 'theme/'
 
@@ -52,8 +52,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Article settings
-ARTICLE_URL = 'blog/{slug}'
-ARTICLE_SAVE_AS = 'blog/{slug}.html'
+ARTICLE_URL = '{slug}'
+ARTICLE_SAVE_AS = '{slug}.html'
 
 # Page settings
 PAGE_URL = '{slug}/'
@@ -80,10 +80,7 @@ AUTHOR_URL = 'author/{slug}/'
 AUTHOR_URL_SAVE_AS = 'author/{slug}/index.html'
 
 # Pages
-DIRECT_TEMPLATES = ['index', 'blog']
 TEMPLATE_PAGES = {
-    'index.html': 'index.html',
-    'blog.html': 'blog.html',
     'contact.html': 'contact.html',
     '404.html': '404.html',
 }
@@ -113,12 +110,11 @@ SOCIAL_MEDIA_LINKS = (
 )
 
 # Pagination settings
-PAGINATED_TEMPLATES = {'index': None, 'blog': None}
-DEFAULT_PAGINATION = 1
-PAGINATION_PATTERNS = (
+DEFAULT_PAGINATION = False
+'''PAGINATION_PATTERNS = (
     (1, '{url}', '{save_as}'),
     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
-)
+)'''
 
 # Plugins
 PLUGINS_PATH = os.path.join(os.getcwd(), "pelican-plugins")
